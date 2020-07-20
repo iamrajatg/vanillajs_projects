@@ -38,7 +38,7 @@ const projects = [
 projects.map((project) => {
     const projectEl = `
     <div class="thumbnail">
-    <img src="img/${project}.png" alt="${project.toUpperCase()}"/>
+    <img src="./img/${project}.png" alt="${project.toUpperCase()}"/>
     <a href="${project}/"><div class="name">
     <h3>${project.toUpperCase()}</h3>
     </div></a>
