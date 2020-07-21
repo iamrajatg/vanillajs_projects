@@ -46,3 +46,12 @@ projects.map((project) => {
     `
     grid.innerHTML += projectEl
 })
+
+const thumbnails = document.querySelectorAll(".thumbnail")
+
+thumbnails.forEach((thumbnail) => {
+    thumbnail.addEventListener("click", () => {
+        //redirecting to anchor tag's href location
+        window.location = thumbnail.childNodes[3].href
+    })
+})
